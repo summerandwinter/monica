@@ -1,5 +1,6 @@
 package com.summer.monica.model;
 
+
 import com.summer.monica.model.inbounds.Allocate;
 import com.summer.monica.model.inbounds.InboundConfig;
 import com.summer.monica.model.inbounds.Sniffing;
@@ -12,6 +13,7 @@ import lombok.Data;
  * @date 2019/6/23
  */
 @Data
+
 public class Inbound {
 
   private String port;
