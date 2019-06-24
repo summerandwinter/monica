@@ -1,10 +1,6 @@
 package com.summer.monica;
 
-import static io.javalin.apibuilder.ApiBuilder.path;
-import static io.javalin.apibuilder.ApiBuilder.get;
-
 import com.summer.monica.config.RouteConfig;
-import com.summer.monica.controller.UserController;
 import com.summer.monica.handler.HttpLoggerHandler;
 import io.javalin.Javalin;
 import io.javalin.core.JavalinConfig;

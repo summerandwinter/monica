@@ -7,7 +7,7 @@ import lombok.Data;
  * @date 2019/6/24
  */
 @Data
-public class HttpHeader extends Header{
+public class HttpHeader extends Header {
   private HTTPRequest request;
   private HTTPResponse response;
 

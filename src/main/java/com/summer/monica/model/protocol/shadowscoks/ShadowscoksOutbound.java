@@ -1,7 +1,6 @@
 package com.summer.monica.model.protocol.shadowscoks;
 
 import com.summer.monica.model.outbounds.OutboundConfig;
-import com.summer.monica.model.protocol.shadowscoks.Server;
 import java.util.List;
 import lombok.Data;
 
