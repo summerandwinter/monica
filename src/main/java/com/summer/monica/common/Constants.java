@@ -9,7 +9,7 @@ public class Constants {
 
   public static final String V2RAY_EXTRA_CONFIG_PATH = "/etc/monica/v2ray-extra-config.json";
 
-  public static final String V2RAY_CONFIG_PATH = "/etc/v2ray/config.json";
+  public static final String V2RAY_CONFIG_PATH = "/Users/summer/v2ray/config.json";
 
   public static final String APP_CONFIG_PATH = "/etc/monica/monica.conf";
 

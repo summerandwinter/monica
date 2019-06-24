@@ -1,5 +1,6 @@
 package com.summer.monica.controller;
 
+import com.google.gson.Gson;
 import com.summer.monica.common.ApiResponse;
 import com.summer.monica.service.InboundService;
 import io.javalin.http.Context;
@@ -11,7 +12,8 @@ import io.javalin.http.Context;
 public class AccountController {
 
   public static void list(Context ctx) {
-    ctx.contentType("application/json").result(InboundService.getInbounds());
+    Gson gson = new Gson();
+    ctx.contentType("application/json").result(gson.toJson(InboundService.getInbounds()));
   }
 
   public static void edit(Context ctx) {

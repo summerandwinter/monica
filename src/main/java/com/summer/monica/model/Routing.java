@@ -1,5 +1,8 @@
 package com.summer.monica.model;
 
+import com.summer.monica.model.routing.Balancer;
+import com.summer.monica.model.routing.Rule;
+import java.util.List;
 import lombok.Data;
 
 /**
@@ -10,5 +13,7 @@ import lombok.Data;
 public class Routing {
 
   private String domainStrategy;
+  private List<Rule> rules;
+  private List<Balancer> balancers;
 
 }
