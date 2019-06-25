@@ -1,6 +1,6 @@
 package com.summer.monica.model.protocol.dekodemo;
 
-import com.summer.monica.model.outbounds.OutboundConfig;
+import com.summer.monica.model.inbounds.BaseInboundSetting;
 import lombok.Data;
 
 /**
@@ -8,7 +8,7 @@ import lombok.Data;
  * @date 2019/6/24
  */
 @Data
-public class DekoDemoOutbound extends OutboundConfig {
+public class DekoDemoInboundSetting extends BaseInboundSetting {
   private String address;
   private Integer port;
   private String network;

@@ -1,6 +1,6 @@
 package com.summer.monica.model.protocol.shadowscoks;
 
-import com.summer.monica.model.outbounds.OutboundConfig;
+import com.summer.monica.model.outbounds.BaseOutboundSetting;
 import java.util.List;
 import lombok.Data;
 
@@ -9,7 +9,7 @@ import lombok.Data;
  * @date 2019/6/24
  */
 @Data
-public class ShadowscoksOutbound extends OutboundConfig {
+public class ShadowSocksOutboundSetting extends BaseOutboundSetting {
   private List<Server> servers;
 
 }

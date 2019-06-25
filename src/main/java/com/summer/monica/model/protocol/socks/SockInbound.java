@@ -1,6 +1,6 @@
 package com.summer.monica.model.protocol.socks;
 
-import com.summer.monica.model.Outbound;
+import com.summer.monica.model.Inbound;
 import lombok.Data;
 
 /**
@@ -8,7 +8,6 @@ import lombok.Data;
  * @date 2019/6/25
  */
 @Data
-public class SocksOutbound extends Outbound {
-  private SocksOutboundSetting settings;
-
+public class SockInbound extends Inbound {
+  private SocksInboundSetting settings;
 }
