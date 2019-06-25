@@ -14,11 +14,11 @@ import java.nio.file.Paths;
  * @date 2019/6/24
  */
 public class InboundService {
+  private static ObjectMapper mapper = new ObjectMapper();
 
   public static V2rayConfig getInbounds() {
     V2rayConfig resp = null;
     try {
-      ObjectMapper mapper = new ObjectMapper();
       byte[] data = Files.readAllBytes(Paths.get(Constants.V2RAY_CONFIG_PATH));
       String content = new String(data, StandardCharsets.UTF_8);
       resp = mapper.readValue(content, V2rayConfig.class);
@@ -27,4 +27,6 @@ public class InboundService {
     }
     return resp;
   }
-}
+
+
+ }

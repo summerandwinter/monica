@@ -4,6 +4,7 @@ import static io.javalin.apibuilder.ApiBuilder.path;
 import static io.javalin.apibuilder.ApiBuilder.get;
 
 import com.summer.monica.controller.AccountController;
+import com.summer.monica.controller.GithubController;
 import com.summer.monica.controller.UserController;
 import io.javalin.apibuilder.EndpointGroup;
 
@@ -24,6 +25,9 @@ public class RouteConfig implements EndpointGroup {
         get("list", AccountController::list);
         get("edit", AccountController::edit);
         get("add", AccountController::add);
+      });
+      path("github", () -> {
+        get("getDownloadUrl", GithubController::getDownloadUrl);
       });
     });
   }
