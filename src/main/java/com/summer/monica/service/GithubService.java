@@ -2,6 +2,7 @@ package com.summer.monica.service;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.summer.monica.common.Constants;
 import com.summer.monica.model.github.Release;
 import java.io.IOException;
 import java.net.URL;
@@ -18,11 +19,11 @@ public class GithubService {
   public static String getLatestDownloadUrl() {
     String url = "";
     try {
-      Release release= mapper.readValue(new URL("https://api.github.com/repos/summerandwinter/monica/releases/latest"), Release.class);
-      if (release.getAssets().size() > 0) {
+      Release release = mapper.readValue(new URL(Constants.GITHUB_RELEASE_URL), Release.class);
+      if (release != null && release.getAssets().size() > 0) {
         url = release.getAssets().get(0).getBrowserDownloadUrl();
       }
-    }catch (IOException e) {
+    } catch (IOException e) {
       e.printStackTrace();
     }
     return url;

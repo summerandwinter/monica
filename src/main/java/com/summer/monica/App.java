@@ -23,6 +23,7 @@ public class App {
 
   private static void config(JavalinConfig config) {
     config.requestLogger(new HttpLoggerHandler());
+    config.addStaticFiles("/");
   }
   private static void jacksonConfig() {
     ObjectMapper mapper = new ObjectMapper();
