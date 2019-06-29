@@ -7,6 +7,7 @@ import com.summer.monica.handler.HttpLoggerHandler;
 import io.javalin.Javalin;
 import io.javalin.core.JavalinConfig;
 import io.javalin.plugin.json.JavalinJackson;
+import java.util.regex.Pattern;
 
 /**
  * @author yi.liu
@@ -14,6 +15,7 @@ import io.javalin.plugin.json.JavalinJackson;
  */
 public class App {
 
+  private static final String PATH_PATTERN = "^/\\w+";
   public static void main(String[] args) {
     Javalin app = Javalin.create(App::config);
     initHandler(app);
@@ -32,6 +34,13 @@ public class App {
   }
   private static void initHandler(Javalin app) {
     app.routes(new RouteConfig());
+    app.before(ctx -> {
+      String path = ctx.path();
+      System.out.println(path);
+      if (Pattern.matches(PATH_PATTERN, path)) {
+        ctx.redirect("/");
+      }
+    });
   }
 
 }

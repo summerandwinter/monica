@@ -1,0 +1,19 @@
+{
+  "/vendors.css": "/vendors.ca5455d1.chunk.css",
+  "/vendors.js": "/vendors.2eed86ed.async.js",
+  "/layouts__BasicLayout.css": "/layouts__BasicLayout.f5ff70a4.chunk.css",
+  "/layouts__BasicLayout.js": "/layouts__BasicLayout.618cff01.async.js",
+  "/p__404.js": "/p__404.2cb101e9.async.js",
+  "/p__Welcome.js": "/p__Welcome.3e7e2064.async.js",
+  "/p__workplace.css": "/p__workplace.7112ab3a.chunk.css",
+  "/p__workplace.js": "/p__workplace.244444dc.async.js",
+  "/p__workplace__model.ts.js": "/p__workplace__model.ts.f77399f8.async.js",
+  "/umi.css": "/umi.7730192e.css",
+  "/umi.js": "/umi.15cfb12a.js",
+  "/viz.js": "/viz.bcb6d121.async.js",
+  "/favicon.png": "/favicon.png",
+  "/icons/icon-128x128.png": "/icons/icon-128x128.png",
+  "/icons/icon-192x192.png": "/icons/icon-192x192.png",
+  "/icons/icon-512x512.png": "/icons/icon-512x512.png",
+  "/index.html": "/index.html"
+}

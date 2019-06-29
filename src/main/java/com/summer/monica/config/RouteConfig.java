@@ -4,6 +4,7 @@ import static io.javalin.apibuilder.ApiBuilder.path;
 import static io.javalin.apibuilder.ApiBuilder.get;
 
 import com.summer.monica.controller.AccountController;
+import com.summer.monica.controller.DefaultController;
 import com.summer.monica.controller.GithubController;
 import com.summer.monica.controller.UserController;
 import io.javalin.apibuilder.EndpointGroup;
@@ -16,6 +17,7 @@ public class RouteConfig implements EndpointGroup {
 
   @Override
   public void addEndpoints() {
+    get("^/api", DefaultController::index);
     path("api", () -> {
       path("user", () -> {
         get("login", UserController::login);
